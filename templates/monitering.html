@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+	<title> Embedded project Mask Detector </title>
+	<h2>
+		Mask Detector Monitering System
+	</h2>
+	<style>
+		h2 { text-align: center;}
+		h3 { text-align: center;}
+		div { text-align: center;}
+	</style>
+	</head>
+
+	<body>
+	<div> <h3> Now Temperature : {{temp}} </h3> 
+	<div>
+	{% if True %}
+		<img src="{{ url_for('static', filename=image_file) }}">
+	{% endif %}
+	</div>
+	</body>
+
+</html>
